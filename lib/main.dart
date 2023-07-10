@@ -49,13 +49,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter layout demo'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text('Flutter layout demo'),
+          ),
+          body: Column(
+            children: [titleSection],
+          )),
     );
   }
 }
